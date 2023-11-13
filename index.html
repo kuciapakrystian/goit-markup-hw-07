@@ -19,6 +19,15 @@
   <body>
     <header class="header">
       <div class="container header-wrap">
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="32" height="22">
+            <use href="./images/icons.svg#icon-menu" />
+          </svg>
+        </button>
         <nav class="navigation">
           <a class="link logo logo-header" href="./index.html"
             >Web<span class="accent">Studio</span></a
@@ -38,13 +47,13 @@
           </ul>
         </nav>
         <address class="address">
-          <ul class="list">
-            <li>
+          <ul class="list address-list">
+            <li class="address-li">
               <a class="address-link link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="address-li">
               <a class="address-link link" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
@@ -65,7 +74,7 @@
       <section class="traits-section section">
         <div class="container">
           <h2 class="visually-hidden">Our traits</h2>
-          <ul class="list">
+          <ul class="list traits-list">
             <li class="traits-li">
               <div class="traits-div">
                 <svg width="64" height="64">
@@ -120,10 +129,11 @@
       <section class="work-section section">
         <div class="container">
           <h2 class="second-heading">What are we doing</h2>
-          <ul class="list">
+          <ul class="list work-list">
             <li class="work-li">
               <img
                 src="./images/about_1.jpg"
+                srcset="./images/about_1.jpg 1x, ./images/about_1@2x.jpg 2x"
                 alt="website on desktop screen"
                 width="360"
                 height="300"
@@ -132,6 +142,7 @@
             <li class="work-li">
               <img
                 src="./images/about_2.jpg"
+                srcset="./images/about_2.jpg 1x, ./images/about_2@2x.jpg 2x"
                 alt="messaging application"
                 width="360"
                 height="300"
@@ -140,6 +151,7 @@
             <li class="work-li">
               <img
                 src="./images/about_3.jpg"
+                srcset="./images/about_3.jpg 1x, ./images/about_3@2x.jpg 2x"
                 alt="website on mobile screen"
                 width="360"
                 height="300"
@@ -151,10 +163,11 @@
       <section class="team-section section">
         <div class="container">
           <h2 class="second-heading">Our Team</h2>
-          <ul class="list">
+          <ul class="list team-list">
             <li class="team-li">
               <img
                 src="./images/person_1.jpg"
+                src="./images/person_1@2x.jpg"
                 alt="man with dark hair and facial hair wearing a blue shirt"
                 width="264"
                 height="260"
@@ -197,6 +210,7 @@
             <li class="team-li">
               <img
                 src="./images/person_2.jpg"
+                srcset="./images/person_2.jpg 1x, ./images/person_2.jpg 2x"
                 alt="smiling man with brown hair wearing a blue shirt"
                 width="264"
                 height="260"
@@ -239,6 +253,7 @@
             <li class="team-li">
               <img
                 src="./images/person_3.jpg"
+                srcset="./images/person_3.jpg 1x, ./images/person_3@2x.jpg 2x"
                 alt="woman with dark hair wearing a pink pullover"
                 width="264"
                 height="260"
@@ -281,6 +296,7 @@
             <li class="team-li">
               <img
                 src="./images/person_4.jpg"
+                srcset="./images/person_4.jpg 1x, ./images/person_4@2x.jpg 2x"
                 alt="smiling man with dark hair wearing a gray t-shirt"
                 width="264"
                 height="260"
@@ -326,7 +342,7 @@
       <section class="section customers-section">
         <div class="container">
           <h2 class="second-heading">Customers</h2>
-          <ul class="list">
+          <ul class="list customers-list">
             <li class="customers-li">
               <a href="" class="link customers-link">
                 <svg class="customers-svg" width="104" height="56">
@@ -385,31 +401,31 @@
           </p>
         </div>
         <div class="footer-social-div">
-          <p class="footer-social-paragraph">Social media</p>
+          <p class="footer-title-paragraph">Social media</p>
           <ul class="list footer-social-list">
-            <li class="footer-social-li">
-              <a href="" class="link footer-icon-link">
+            <li class="social-li">
+              <a href="" class="link icon-link">
                 <svg class="footer-social-svg" width="24" height="24">
                   <use href="./images/icons.svg#icon-instagram" />
                 </svg>
               </a>
             </li>
-            <li class="footer-social-li">
-              <a href="" class="link footer-icon-link">
+            <li class="social-li">
+              <a href="" class="link icon-link">
                 <svg class="footer-social-svg" width="24" height="24">
                   <use href="./images/icons.svg#icon-twitter" />
                 </svg>
               </a>
             </li>
-            <li class="footer-social-li">
-              <a href="" class="link footer-icon-link">
+            <li class="social-li">
+              <a href="" class="link icon-link">
                 <svg class="footer-social-svg" width="24" height="24">
                   <use href="./images/icons.svg#icon-facebook" />
                 </svg>
               </a>
             </li>
-            <li class="footer-social-li">
-              <a href="" class="link footer-icon-link">
+            <li class="social-li">
+              <a href="" class="link icon-link">
                 <svg class="footer-social-svg" width="24" height="24">
                   <use href="./images/icons.svg#icon-linkedin" />
                 </svg>
@@ -417,8 +433,8 @@
             </li>
           </ul>
         </div>
-        <div class="form-div">
-          <p class="footer-subscribe-paragraph">Subscribe</p>
+        <div class="footer-form-div">
+          <p class="footer-title-paragraph">Subscribe</p>
           <form class="footer-form">
             <label class="footer-label" for="subscribe">
               <input
@@ -469,7 +485,13 @@
           <div class="modal-field">
             <label class="modal-label" for="user-tel">Phone</label>
             <div class="modal-row">
-              <input class="modal-input" id="user-tel" name="tel" type="tel" required />
+              <input
+                class="modal-input"
+                id="user-tel"
+                name="tel"
+                type="tel"
+                required
+              />
               <svg class="modal-form-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone" />
               </svg>
@@ -524,6 +546,83 @@
         </form>
       </div>
     </div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <div>
+        <button class="close menu-toggle js-close-menu" type="button">
+          <svg class="close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close" />
+          </svg>
+        </button>
+        <nav class="navigation">
+          <ul class="list nav-list">
+            <li class="nav-li">
+              <a class="nav-link active-page link" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="nav-li">
+              <a class="nav-link link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-li">
+              <a class="nav-link link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div>
+        <address class="address">
+          <ul class="list menu-address-list">
+            <li class="menu-address-li">
+              <a class="address-link link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="menu-address-li">
+              <a class="address-link link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="list menu-social-list">
+          <li class="social-li">
+            <a href="" class="link icon-link">
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram" />
+              </svg>
+            </a>
+          </li>
+          <li class="social-li">
+            <a href="" class="link icon-link">
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter" />
+              </svg>
+            </a>
+          </li>
+          <li class="social-li">
+            <a href="" class="link icon-link">
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook" />
+              </svg>
+            </a>
+          </li>
+          <li class="social-li">
+            <a href="" class="link icon-link">
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

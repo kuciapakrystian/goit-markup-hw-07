@@ -19,6 +19,15 @@
   <body>
     <header class="header">
       <div class="container header-wrap">
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="32" height="22">
+            <use href="./images/icons.svg#icon-menu" />
+          </svg>
+        </button>
         <nav class="navigation">
           <a class="link logo logo-header" href="./index.html"
             >Web<span class="accent">Studio</span></a
@@ -38,13 +47,13 @@
           </ul>
         </nav>
         <address class="address">
-          <ul class="list">
-            <li>
+          <ul class="list address-list">
+            <li class="address-li">
               <a class="address-link link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="address-li">
               <a class="address-link link" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
@@ -80,12 +89,16 @@
               </button>
             </li>
           </ul>
-          <ul class="list portfolio-app">
+          <ul class="list portfolio-app-list">
             <li class="portfolio-app-li">
               <a href="" class="link portfolio-app-link">
                 <div class="img-wrap">
                   <img
-                    src="./images/portfolio_1.jpg"
+                    src="./images/portfolio_1-360.jpg"
+                    srcset="
+                      ./images/portfolio_1-360.jpg 360w,
+                      ./images/portfolio_1-720.jpg 720w
+                    "
                     alt="BankApp application"
                     width="360"
                     height="300"
@@ -100,7 +113,7 @@
                   <h2 class="portfolio-second-heading">
                     Banking App Interface Concept
                   </h2>
-                  <p class="paragraph">App</p>
+                  <p class="paragraph app-name-small">App</p>
                 </div>
               </a>
             </li>
@@ -108,7 +121,12 @@
               <a href="" class="link portfolio-app-link">
                 <div class="img-wrap">
                   <img
-                    src="./images/portfolio_2.jpg"
+                    src="./images/portfolio_2-360.jpg"
+                    srcset="
+                      ./images/portfolio_2-360.jpg 360w,
+                      ./images/portfolio_2-720.jpg 720w
+                    "
+                    sizes="(min-width: 392px) 360px, calc(100vw - 32px)"
                     alt="scanning an QR code"
                     width="360"
                     height="300"
@@ -121,7 +139,7 @@
                 </div>
                 <div class="portfolio-app-name">
                   <h2 class="portfolio-second-heading">Cashless Payment</h2>
-                  <p class="paragraph">Marketing</p>
+                  <p class="paragraph app-name-small">Marketing</p>
                 </div>
               </a>
             </li>
@@ -129,7 +147,12 @@
               <a href="" class="link portfolio-app-link">
                 <div class="img-wrap">
                   <img
-                    src="./images/portfolio_3.jpg"
+                    src="./images/portfolio_3-360.jpg"
+                    srcset="
+                      ./images/portfolio_3-360.jpg 360w,
+                      ./images/portfolio_3-720.jpg 720w
+                    "
+                    sizes="(min-width: 392px) 360px, calc(100vw - 32px)"
                     alt="laptop and mobile screens showing meditation application"
                     width="360"
                     height="300"
@@ -142,7 +165,7 @@
                 </div>
                 <div class="portfolio-app-name">
                   <h2 class="portfolio-second-heading">Meditation App</h2>
-                  <p class="paragraph">App</p>
+                  <p class="paragraph app-name-small">App</p>
                 </div>
               </a>
             </li>
@@ -150,7 +173,12 @@
               <a href="" class="link portfolio-app-link">
                 <div class="img-wrap">
                   <img
-                    src="./images/portfolio_4.jpg"
+                    src="./images/portfolio_4-360.jpg"
+                    srcset="
+                      ./images/portfolio_4-360.jpg 360w,
+                      ./images/portfolio_4-720.jpg 720w
+                    "
+                    sizes="(min-width: 392px) 360px, calc(100vw - 32px)"
                     alt="steering wheel being held"
                     width="360"
                     height="300"
@@ -163,7 +191,7 @@
                 </div>
                 <div class="portfolio-app-name">
                   <h2 class="portfolio-second-heading">Taxi Service</h2>
-                  <p class="paragraph">Marketing</p>
+                  <p class="paragraph app-name-small">Marketing</p>
                 </div>
               </a>
             </li>
@@ -171,7 +199,12 @@
               <a href="" class="link portfolio-app-link">
                 <div class="img-wrap">
                   <img
-                    src="./images/portfolio_5.jpg"
+                    src="./images/portfolio_5-360.jpg"
+                    srcset="
+                      ./images/portfolio_5-360.jpg 360w,
+                      ./images/portfolio_5-720.jpg 720w
+                    "
+                    sizes="(min-width: 392px) 360px, calc(100vw - 32px)"
                     alt="phone screen with a moon wallpaper"
                     width="360"
                     height="300"
@@ -184,7 +217,7 @@
                 </div>
                 <div class="portfolio-app-name">
                   <h2 class="portfolio-second-heading">Screen Illustrations</h2>
-                  <p class="paragraph">Design</p>
+                  <p class="paragraph app-name-small">Design</p>
                 </div>
               </a>
             </li>
@@ -192,7 +225,12 @@
               <a href="" class="link portfolio-app-link">
                 <div class="img-wrap">
                   <img
-                    src="./images/portfolio_6.jpg"
+                    src="./images/portfolio_6-360.jpg"
+                    srcset="
+                      ./images/portfolio_6-360.jpg 360w,
+                      ./images/portfolio_6-720.jpg 720w
+                    "
+                    sizes="(min-width: 392px) 360px, calc(100vw - 32px)"
                     alt="smiling woman with headphones using a mobile phone"
                     width="360"
                     height="300"
@@ -205,7 +243,7 @@
                 </div>
                 <div class="portfolio-app-name">
                   <h2 class="portfolio-second-heading">Online Courses</h2>
-                  <p class="paragraph">Marketing</p>
+                  <p class="paragraph app-name-small">Marketing</p>
                 </div>
               </a>
             </li>
@@ -213,7 +251,12 @@
               <a href="" class="link portfolio-app-link">
                 <div class="img-wrap">
                   <img
-                    src="./images/portfolio_7.jpg"
+                    src="./images/portfolio_7-360.jpg"
+                    srcset="
+                      ./images/portfolio_7-360.jpg 360w,
+                      ./images/portfolio_7-720.jpg 720w
+                    "
+                    sizes="(min-width: 392px) 360px, calc(100vw - 32px)"
                     alt="templates concerning keeping house under control"
                     width="360"
                     height="300"
@@ -228,7 +271,7 @@
                   <h2 class="portfolio-second-heading">
                     Instagram Stories Concept
                   </h2>
-                  <p class="paragraph">Design</p>
+                  <p class="paragraph app-name-small">Design</p>
                 </div>
               </a>
             </li>
@@ -236,7 +279,12 @@
               <a href="" class="link portfolio-app-link">
                 <div class="img-wrap">
                   <img
-                    src="./images/portfolio_8.jpg"
+                    src="./images/portfolio_8-360.jpg"
+                    srcset="
+                      ./images/portfolio_8-360.jpg 360w,
+                      ./images/portfolio_8-720.jpg 720w
+                    "
+                    sizes="(min-width: 392px) 360px, calc(100vw - 32px)"
                     alt="woman carrying a bag of fruits and vegetables"
                     width="360"
                     height="300"
@@ -249,7 +297,7 @@
                 </div>
                 <div class="portfolio-app-name">
                   <h2 class="portfolio-second-heading">Organic Food</h2>
-                  <p class="paragraph">Web Site</p>
+                  <p class="paragraph app-name-small">Web Site</p>
                 </div>
               </a>
             </li>
@@ -257,7 +305,12 @@
               <a href="" class="link portfolio-app-link">
                 <div class="img-wrap">
                   <img
-                    src="./images/portfolio_9.jpg"
+                    src="./images/portfolio_9-360.jpg"
+                    srcset="
+                      ./images/portfolio_9-360.jpg 360w,
+                      ./images/portfolio_9-720.jpg 720w
+                    "
+                    sizes="(min-width: 392px) 360px, calc(100vw - 32px)"
                     alt="person decorating a coffee"
                     width="360"
                     height="300"
@@ -270,7 +323,7 @@
                 </div>
                 <div class="portfolio-app-name">
                   <h2 class="portfolio-second-heading">Fresh Coffee</h2>
-                  <p class="paragraph">Web Site</p>
+                  <p class="paragraph app-name-small">Web Site</p>
                 </div>
               </a>
             </li>
@@ -290,31 +343,31 @@
           </p>
         </div>
         <div class="footer-social-div">
-          <p class="footer-social-paragraph">Social media</p>
+          <p class="footer-title-paragraph">Social media</p>
           <ul class="list footer-social-list">
-            <li class="footer-social-li">
-              <a href="" class="link footer-icon-link">
+            <li class="social-li">
+              <a href="" class="link icon-link">
                 <svg class="footer-social-svg" width="24" height="24">
                   <use href="./images/icons.svg#icon-instagram" />
                 </svg>
               </a>
             </li>
-            <li class="footer-social-li">
-              <a href="" class="link footer-icon-link">
+            <li class="social-li">
+              <a href="" class="link icon-link">
                 <svg class="footer-social-svg" width="24" height="24">
                   <use href="./images/icons.svg#icon-twitter" />
                 </svg>
               </a>
             </li>
-            <li class="footer-social-li">
-              <a href="" class="link footer-icon-link">
+            <li class="social-li">
+              <a href="" class="link icon-link">
                 <svg class="footer-social-svg" width="24" height="24">
                   <use href="./images/icons.svg#icon-facebook" />
                 </svg>
               </a>
             </li>
-            <li class="footer-social-li">
-              <a href="" class="link footer-icon-link">
+            <li class="social-li">
+              <a href="" class="link icon-link">
                 <svg class="footer-social-svg" width="24" height="24">
                   <use href="./images/icons.svg#icon-linkedin" />
                 </svg>
@@ -322,8 +375,8 @@
             </li>
           </ul>
         </div>
-        <div class="form-div">
-          <p class="footer-subscribe-paragraph">Subscribe</p>
+        <div class="footer-form-div">
+          <p class="footer-title-paragraph">Subscribe</p>
           <form class="footer-form">
             <label class="footer-label" for="subscribe">
               <input
@@ -332,6 +385,7 @@
                 type="email"
                 name="subscribe"
                 placeholder="E-mail"
+                required
               />
             </label>
             <button class="button subscribe-button" type="submit">
@@ -344,5 +398,82 @@
         </div>
       </div>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <div>
+        <button class="close menu-toggle js-close-menu" type="button">
+          <svg class="close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close" />
+          </svg>
+        </button>
+        <nav class="navigation">
+          <ul class="list nav-list">
+            <li class="nav-li">
+              <a class="nav-link link" href="./index.html">Studio</a>
+            </li>
+            <li class="nav-li">
+              <a class="nav-link active-page link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-li">
+              <a class="nav-link link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div>
+        <address class="address">
+          <ul class="list menu-address-list">
+            <li class="menu-address-li">
+              <a class="address-link link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="menu-address-li">
+              <a class="address-link link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="list menu-social-list">
+          <li class="social-li">
+            <a href="" class="link icon-link">
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram" />
+              </svg>
+            </a>
+          </li>
+          <li class="social-li">
+            <a href="" class="link icon-link">
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter" />
+              </svg>
+            </a>
+          </li>
+          <li class="social-li">
+            <a href="" class="link icon-link">
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook" />
+              </svg>
+            </a>
+          </li>
+          <li class="social-li">
+            <a href="" class="link icon-link">
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

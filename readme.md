@@ -1,1 +1,1 @@
-https://kuciapakrystian.github.io/goit-markup-hw-06/
+https://kuciapakrystian.github.io/goit-markup-hw-07/
