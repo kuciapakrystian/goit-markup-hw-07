@@ -1,4 +1,7 @@
 https://kuciapakrystian.github.io/goit-markup-hw-07/
+# WebStudio - Responsive Web Design Project
+
+<img align="right" src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="100"/>
 ## Overview
 
 WebStudio is a responsive web design project created for a fictional company named "WebStudio." This freelance project focuses on delivering a modern and visually appealing web presence using HTML, CSS, and JavaScript. The website consists of a home page called "Studio" and a portfolio page, each with unique features and functionality.
